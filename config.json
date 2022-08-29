@@ -1,0 +1,48 @@
+{
+    "declarations" : {
+        "constants" : {
+            "FLIGHT_DETECTED_HEARTBEAT_MS" : 1000
+        },
+        "parameters" : {
+            "param1_p" : 123123123,
+            "param2_p" : 123123124,
+            "param3_p" : 123123125
+        },
+        "signals" : {
+            "s1_s" : 1,
+            "s2_s" : 2,
+            "s3_s" : 3,
+            "s4_s" : 4,
+            "not_s4_s" : 5
+        },
+        "expressions" : [
+            "s1_s <= param1_p > 500",
+            "s2_s <= param2_p == 1",
+            "s3_s <= HOLD_TRUE(s1_s, 1000, 1000)",
+            "s4_s <= s2_s AND s3_s",
+            "not_s4_s <= NOT s4_s"
+        ],
+        "state_machines" : {
+            "flight_detector_sm" : 0
+        },
+        "states" : {
+            "fd_start_st" : 0,
+            "fd_detected_st" : 1
+        }
+    },
+    "flight_detector_sm" : {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
